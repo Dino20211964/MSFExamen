@@ -1,10 +1,10 @@
 \[!\[Open in MATLAB Online]
 
-# Práctica 1: Diseño de controladores
+# Examen Modelado de sistemas Fisiologicos
 
 ## Información de la estudiante
 
-Nombres y Apellidos \[No. Control]; correo institucional
+Victor Silvano Dino Seanez \[20211964]; l20211964@tectijuana.edu.mx
 
 Modelado de Sistemas Fisiológicos
 
@@ -24,29 +24,30 @@ La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estu
 
 ## Objetivos
 
-1. Calcular la función de transferencia.
-2. Determinar el modelo de ecuaciones integro-diferenciales.
-3. Analizar la estabilidad del sistema
-4. Determinar el error en estado estacionario.
-5. Emular la respuesta del circuito RLC en Simulink/Simscape al escalón, impulso, rampa y función sinusoidal.
-6. Sintonizar las ganancias de un controlador PID en Simulink/MATLAB para eliminar el error entre la entrada y la salida del sistema.
-7. Simular la respuesta del sistema en lazo abierto y lazo cerrado en Simulink/MATLAB al escalón, impulso, rampa y función sinusoidal.
-8. Obtener la respuesta en lazo abierto y en lazo cerrado con el controlador PID en Spyder/Python con la función de transferencia.
+1. (20 puntos) Dibuje el diagrama eléctrico del sistema cardiovascular, identificando cada uno de sus elementos, es decir, 
+componentes, voltajes, corrientes y nodos de entrada y salida.
+Valores de los componentes para el Control: R1 = 3 kΩ, L = 330 µH, R2 = 300 kΩ y C = 3.3 µF.
+Valores de los componentes para el Caso: R1 = 3 kΩ, L = 330 µH, R2 = 3 kΩ y C = 330 µF
+2. (30 puntos) Determine el modelo de ecuaciones integro-diferenciales y la función de transferencia del sistema.
+3. (30 puntos) Utilice Simulink para construir el sistema cardiovascular descrito y obtener las respuestas del Control, el Caso y 
+el sistema de control en lazo cerrado. El tiempo de simulación debe ser de 10 s.
+Figura. Lienzo representativo para construir en Simulink.
+4. (20 puntos) Las simulaciones solamente deben realizarse en Simulink, se debe crear un repositorio de GitHub con los 
+archivos e imágenes correspondientes al Scope con las señales de cada subsistema, así como los parámetros del 
+controlador, capturas de pantalla de cada subsistema. El repositorio debe tener sus archivos de README y CITATION.
 
 ## Descripción detallada del sistema
 
-En esta práctica se presenta un circuito RLC de segundo orden, el sistema es estable con una respuesta sobreamortiguada, un error en estado estacionario de 0.5 V y un transitorio que depende directamente de los valores elegidos para el conjunto de resistencias R y la capacitancia del capacitor C de la segunda malla.
-
-Palabras clave: Circuito RLC; Controlador PID; Sistema respiratorio; Modelo matemático; Simulaciones numéricas.
+El sistema representa un modelo simplificado del sistema cardiovascular mediante un circuito RLC de segundo orden. La fuente de voltaje Ve(t)Ve(t)Ve(t) simula el impulso eléctrico generado por el nodo sinoauricular del corazón. El resistor R1R1R1 representa la resistencia vascular principal al flujo sanguíneo, mientras que el inductor LLL modela la inercia de la sangre y su oposición a cambios bruscos de flujo.
+En el nodo principal se obtiene la salida Vs(t)Vs(t)Vs(t), que representa la presión o energía del sistema. A partir de este nodo se conectan dos ramas en paralelo: el resistor R2R2R2, asociado a la capacidad de respuesta y estabilidad del sistema, y el capacitor CCC, que representa la elasticidad de las arterias y el almacenamiento temporal de energía.
+La interacción entre RRR, LLL y CCC produce un comportamiento dinámico de segundo orden similar al funcionamiento del corazón y la circulación sanguínea, permitiendo analizar la respuesta del sistema mediante ecuaciones diferenciales, función de transferencia y simulaciones en Simulink.
 
 ## Lista de archivos incluidos en el repositorio
 
-1. Cuaderno computacional de MATLAB \[.mlx].
-2. Modelo de Simulink \[.slx].
-3. Archivos de Spyder \[.py].
-4. Imagen con los parámetros del controlador.
-5. Imágenes de las simulaciones \[.pdf y .png].
-6. Análisis matemático: Función de transferencia, modelo de ecuaciones integro-diferenciales, estabilidad y error en estado estacionario.
+1. Modelo de Simulink \[.slx].
+2. Imagen con los parámetros del controlador.
+3. Imágenes de las simulaciones \[.pdf y .png].
+4. Análisis matemático: Función de transferencia, modelo de ecuaciones integro-diferenciales, estabilidad y error en estado estacionario.
 
 ## Referencias
 
