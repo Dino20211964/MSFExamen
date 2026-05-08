@@ -48,6 +48,7 @@ La interacción entre RRR, LLL y CCC produce un comportamiento dinámico de segu
 2. Imagen con los parámetros del controlador.
 3. Imágenes de las simulaciones \[.pdf y .png].
 4. Análisis matemático: Función de transferencia, modelo de ecuaciones integro-diferenciales
+5. Diagrama electrico
 
 ## Referencias
 
