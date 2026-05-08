@@ -47,7 +47,7 @@ La interacción entre RRR, LLL y CCC produce un comportamiento dinámico de segu
 1. Modelo de Simulink \[.slx].
 2. Imagen con los parámetros del controlador.
 3. Imágenes de las simulaciones \[.pdf y .png].
-4. Análisis matemático: Función de transferencia, modelo de ecuaciones integro-diferenciales, estabilidad y error en estado estacionario.
+4. Análisis matemático: Función de transferencia, modelo de ecuaciones integro-diferenciales
 
 ## Referencias
 
