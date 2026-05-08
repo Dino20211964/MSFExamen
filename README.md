@@ -1,2 +1,2 @@
 # MSFExamen
-Examen de modelado de sistem fisiologicos
+Examen de modelado de sistemas fisiologicos
